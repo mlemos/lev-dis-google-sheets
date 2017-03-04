@@ -3,15 +3,15 @@
 // 
 // This function calculates de Levenshtein Distance (or Edit Distance) between two strings.
 // I used the algorith and code from Wikipedia (https://en.wikipedia.org/wiki/Levenshtein_distance)
-// as a reference and adjsuted the code to be used on Google Sheets.
+// as a reference and just adjusted the code to be used on Google Sheets.
 //
 // By: Manoel Lemos / manoel@lemos.net / http://manoellemos.com
 //
 // IMPORTANT: I added some code in the begining of the function to try to solve the issues
 // related to rate-limit of App Scripts in Google Sheets. There is a limit of how many times
 // per second you can call external funcions on Google Sheets. The code is a bit dumb and makes
-// everything much slower, but it worked for me. You can comment it if you don't too many calls
-// and much faster response times.
+// everything much slower, but it worked for me. You can comment it if you don't need too many
+// calls (you'll have much faster response times).
 //
 
 function LevDis(s,t) {
